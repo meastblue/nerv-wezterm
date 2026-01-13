@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#3e3b70',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#9996c8',
+]
+background = '#dad9eb'
+brights = [
+  '#474481',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#a9a7d1',
+]
+compose_cursor = '#b96000'
+cursor_bg = '#da2a5f'
+cursor_border = '#da2a5f'
+cursor_fg = '#dad9eb'
+foreground = '#07060c'
+scrollbar_thumb = '#9996c8'
+selection_bg = '#9996c8'
+selection_fg = '#07060c'
+split = '#8985bf'
+visual_bell = '#b9b8d9'
+
+[colors.indexed]
+16 = '#b96000'
+17 = '#da2a5f'
+
+[colors.tab_bar]
+background = '#c0bedd'
+inactive_tab_edge = '#b9b8d9'
+
+[colors.tab_bar.active_tab]
+bg_color = '#422eb0'
+fg_color = '#ffffff'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#cdcce4'
+fg_color = '#07060c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#dad9eb'
+fg_color = '#07060c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#b9b8d9'
+fg_color = '#07060c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#a9a7d1'
+fg_color = '#07060c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Light - Sorbet Grape'

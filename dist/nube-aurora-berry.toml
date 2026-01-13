@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#222844',
+  '#E35535',
+  '#3CEC85',
+  '#EACD61',
+  '#69C3FF',
+  '#F38CEC',
+  '#22ECDB',
+  '#99a2cc',
+]
+background = '#111422'
+brights = [
+  '#2b3255',
+  '#E35535',
+  '#3CEC85',
+  '#EACD61',
+  '#69C3FF',
+  '#F38CEC',
+  '#22ECDB',
+  '#8893c4',
+]
+compose_cursor = '#FF955C'
+cursor_bg = '#FF738A'
+cursor_border = '#FF738A'
+cursor_fg = '#0a0c14'
+foreground = '#bcc1dc'
+scrollbar_thumb = '#2b3255'
+selection_bg = '#2b3255'
+selection_fg = '#bcc1dc'
+split = '#3b4677'
+visual_bell = '#1a1e33'
+
+[colors.indexed]
+16 = '#FF955C'
+17 = '#FF738A'
+
+[colors.tab_bar]
+background = '#0a0c14'
+inactive_tab_edge = '#1a1e33'
+
+[colors.tab_bar.active_tab]
+bg_color = '#8eb0e6'
+fg_color = '#0a0c14'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0e101b'
+fg_color = '#bcc1dc'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#111422'
+fg_color = '#bcc1dc'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1a1e33'
+fg_color = '#bcc1dc'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#222844'
+fg_color = '#bcc1dc'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Dark - Aurora Berry'

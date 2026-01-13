@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#5e6871',
+  '#d03333',
+  '#189433',
+  '#bb9600',
+  '#0073d1',
+  '#e022b4',
+  '#009999',
+  '#bbc1c7',
+]
+background = '#f3f4f5'
+brights = [
+  '#6a757f',
+  '#d03333',
+  '#189433',
+  '#bb9600',
+  '#0073d1',
+  '#e022b4',
+  '#009999',
+  '#c9ced2',
+]
+compose_cursor = '#d06200'
+cursor_bg = '#e8386a'
+cursor_border = '#e8386a'
+cursor_fg = '#f3f4f5'
+foreground = '#091316'
+scrollbar_thumb = '#bbc1c7'
+selection_bg = '#bbc1c7'
+selection_fg = '#091316'
+split = '#adb4bb'
+visual_bell = '#d7dbde'
+
+[colors.indexed]
+16 = '#d06200'
+17 = '#e8386a'
+
+[colors.tab_bar]
+background = '#dde0e2'
+inactive_tab_edge = '#d7dbde'
+
+[colors.tab_bar.active_tab]
+bg_color = '#22a5c9'
+fg_color = '#ffffff'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#e8eaec'
+fg_color = '#091316'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#f3f4f5'
+fg_color = '#091316'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#d7dbde'
+fg_color = '#091316'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#c9ced2'
+fg_color = '#091316'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Light - Daylight'

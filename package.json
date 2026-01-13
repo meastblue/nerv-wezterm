@@ -1,0 +1,18 @@
+{
+  "name": "nube-wezterm",
+  "version": "1.0.0",
+  "description": "Nube color schemes for WezTerm",
+  "type": "module",
+  "packageManager": "bun@1.1.0",
+  "scripts": {
+    "build": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "colord": "^2.9.3",
+    "typescript": "^5.3.3"
+  },
+  "author": "meastblue",
+  "license": "MIT"
+}

@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#333849',
+  '#fc6a67',
+  '#a9dc76',
+  '#ffd866',
+  '#78dce8',
+  '#e991e3',
+  '#78e8c6',
+  '#b2b7c9',
+]
+background = '#1e212b'
+brights = [
+  '#3d4458',
+  '#fc6a67',
+  '#a9dc76',
+  '#ffd866',
+  '#78dce8',
+  '#e991e3',
+  '#78e8c6',
+  '#a3a9bf',
+]
+compose_cursor = '#fc9867'
+cursor_bg = '#ff6188'
+cursor_border = '#ff6188'
+cursor_fg = '#16181f'
+foreground = '#d0d3de'
+scrollbar_thumb = '#3d4458'
+selection_bg = '#3d4458'
+selection_fg = '#d0d3de'
+split = '#525b76'
+visual_bell = '#282d3a'
+
+[colors.indexed]
+16 = '#fc9867'
+17 = '#ff6188'
+
+[colors.tab_bar]
+background = '#16181f'
+inactive_tab_edge = '#282d3a'
+
+[colors.tab_bar.active_tab]
+bg_color = '#98a2b5'
+fg_color = '#16181f'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#1a1c25'
+fg_color = '#d0d3de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#1e212b'
+fg_color = '#d0d3de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#282d3a'
+fg_color = '#d0d3de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#333849'
+fg_color = '#d0d3de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Dark - Ember Steel'

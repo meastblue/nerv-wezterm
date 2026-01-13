@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#2b4756',
+  '#B4552D',
+  '#97c892',
+  '#f6cc73',
+  '#5fb2df',
+  '#d194cd',
+  '#59c6c8',
+  '#abc6d5',
+]
+background = '#1a2b34'
+brights = [
+  '#345567',
+  '#B4552D',
+  '#97c892',
+  '#f6cc73',
+  '#5fb2df',
+  '#d194cd',
+  '#59c6c8',
+  '#9abbcd',
+]
+compose_cursor = '#DC8255'
+cursor_bg = '#ee5d75'
+cursor_border = '#ee5d75'
+cursor_fg = '#132026'
+foreground = '#cddde6'
+scrollbar_thumb = '#345567'
+selection_bg = '#345567'
+selection_fg = '#cddde6'
+split = '#457189'
+visual_bell = '#233945'
+
+[colors.indexed]
+16 = '#DC8255'
+17 = '#ee5d75'
+
+[colors.tab_bar]
+background = '#132026'
+inactive_tab_edge = '#233945'
+
+[colors.tab_bar.active_tab]
+bg_color = '#97c892'
+fg_color = '#132026'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#17252d'
+fg_color = '#cddde6'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#1a2b34'
+fg_color = '#cddde6'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#233945'
+fg_color = '#cddde6'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#2b4756'
+fg_color = '#cddde6'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Dark - Depths'

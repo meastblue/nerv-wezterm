@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#2c2c32',
+  '#D62C2C',
+  '#42DD76',
+  '#FFB638',
+  '#28A9FF',
+  '#E66DFF',
+  '#14E5D4',
+  '#a9a9b4',
+]
+background = '#141417'
+brights = [
+  '#383840',
+  '#D62C2C',
+  '#42DD76',
+  '#FFB638',
+  '#28A9FF',
+  '#E66DFF',
+  '#14E5D4',
+  '#9b9ba8',
+]
+compose_cursor = '#FF7135'
+cursor_bg = '#FF478D'
+cursor_border = '#FF478D'
+cursor_fg = '#0b0b0c'
+foreground = '#c5c5cb'
+scrollbar_thumb = '#383840'
+selection_bg = '#383840'
+selection_fg = '#c5c5cb'
+split = '#4f4f5b'
+visual_bell = '#202025'
+
+[colors.indexed]
+16 = '#FF7135'
+17 = '#FF478D'
+
+[colors.tab_bar]
+background = '#0b0b0c'
+inactive_tab_edge = '#202025'
+
+[colors.tab_bar.active_tab]
+bg_color = '#AAAAAA'
+fg_color = '#0b0b0c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0f0f12'
+fg_color = '#c5c5cb'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#141417'
+fg_color = '#c5c5cb'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#202025'
+fg_color = '#c5c5cb'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#2c2c32'
+fg_color = '#c5c5cb'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Dark - Neon Void'

@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#354258',
+  '#E35535',
+  '#3CEC85',
+  '#EACD61',
+  '#69C3FF',
+  '#F38CEC',
+  '#22ECDB',
+  '#b8c2d4',
+]
+background = '#222A38'
+brights = [
+  '#3f4e68',
+  '#E35535',
+  '#3CEC85',
+  '#EACD61',
+  '#69C3FF',
+  '#F38CEC',
+  '#22ECDB',
+  '#a8b5ca',
+]
+compose_cursor = '#FF955C'
+cursor_bg = '#FF738A'
+cursor_border = '#FF738A'
+cursor_fg = '#1a202b'
+foreground = '#d8dde7'
+scrollbar_thumb = '#3f4e68'
+selection_bg = '#3f4e68'
+selection_fg = '#d8dde7'
+split = '#526587'
+visual_bell = '#2c3648'
+
+[colors.indexed]
+16 = '#FF955C'
+17 = '#FF738A'
+
+[colors.tab_bar]
+background = '#1a202b'
+inactive_tab_edge = '#2c3648'
+
+[colors.tab_bar.active_tab]
+bg_color = '#9DACC3'
+fg_color = '#1a202b'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#1e2532'
+fg_color = '#d8dde7'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#222A38'
+fg_color = '#d8dde7'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#2c3648'
+fg_color = '#d8dde7'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#354258'
+fg_color = '#d8dde7'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nube Dark - Aurora Storm'
