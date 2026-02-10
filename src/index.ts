@@ -132,6 +132,12 @@ const evaColors: SyntaxColors = {
   turquoise: "#2ba5a5", yellow: "#d4a017",
 };
 
+const adamColors: SyntaxColors = {
+  blue: "#4493c5", green: "#2ecc71", greenAlt: "#8ab648", orange: "#e8641b",
+  pink: "#d44a8a", purple: "#9b59b6", red: "#e01a1a", salmon: "#e84545",
+  turquoise: "#2ba5a5", yellow: "#d4a017",
+};
+
 const nurBaseColors: SyntaxColors = {
   blue: "#0073d1", green: "#189433", greenAlt: "#5e8516", orange: "#d06200",
   pink: "#e022b4", purple: "#8737e6", red: "#d03333", salmon: "#e8386a",
@@ -199,6 +205,14 @@ const palettes: NervPalette[] = [
   dark("Eva Terminal", "eva-terminal", evaColors, "#0a0f0a", "#5fa052"),
   dark("Eva Geofront", "eva-geofront", evaColors, "#0a0a10", "#4493c5"),
   dark("Eva Soft", "eva-soft", evaColors, "#1a1214", "#e01a1a"),
+
+  // Adam (6)
+  dark("Adam", "adam", adamColors, "#0a0a0a", "#2ecc71"),
+  dark("Adam Oasis", "adam-oasis", adamColors, "#0a100f", "#1abc9c"),
+  dark("Adam Eden", "adam-eden", adamColors, "#0f0e0a", "#d4b42a"),
+  dark("Adam Jade", "adam-jade", adamColors, "#080d0b", "#27ae60"),
+  dark("Adam Soft", "adam-soft", adamColors, "#121a14", "#2ecc71"),
+  dark("Adam Midnight", "adam-midnight", adamColors, "#0a0a0a", "#58d68d"),
 
   // Nūr (6)
   light("Nūr", "nur", nurBaseColors, "#f3f4f5", "#22a5c9"),

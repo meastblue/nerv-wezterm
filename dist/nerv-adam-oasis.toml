@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1e2f2c',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#91bbb4',
+]
+background = '#0a100f'
+brights = [
+  '#273f3b',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#82b1a9',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#020303'
+foreground = '#b1cec9'
+scrollbar_thumb = '#273f3b'
+selection_bg = '#273f3b'
+selection_fg = '#b1cec9'
+split = '#3b5e59'
+visual_bell = '#14201e'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#020303'
+inactive_tab_edge = '#14201e'
+
+[colors.tab_bar.active_tab]
+bg_color = '#1abc9c'
+fg_color = '#020303'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#060a09'
+fg_color = '#b1cec9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a100f'
+fg_color = '#b1cec9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#14201e'
+fg_color = '#b1cec9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1e2f2c'
+fg_color = '#b1cec9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Adam Oasis'

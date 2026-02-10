@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1b2d26',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#8eb9a8',
+]
+background = '#080d0b'
+brights = [
+  '#253c33',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#7eb09c',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#000000'
+foreground = '#aeccc0'
+scrollbar_thumb = '#253c33'
+selection_bg = '#253c33'
+selection_fg = '#aeccc0'
+split = '#395c4e'
+visual_bell = '#121d18'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#000000'
+inactive_tab_edge = '#121d18'
+
+[colors.tab_bar.active_tab]
+bg_color = '#27ae60'
+fg_color = '#000000'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#040706'
+fg_color = '#aeccc0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#080d0b'
+fg_color = '#aeccc0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#121d18'
+fg_color = '#aeccc0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1b2d26'
+fg_color = '#aeccc0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Adam Jade'

@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#2e2b1e',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#b7b094',
+]
+background = '#0f0e0a'
+brights = [
+  '#3d3929',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#ada584',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#030302'
+foreground = '#cbc6b3'
+scrollbar_thumb = '#3d3929'
+selection_bg = '#3d3929'
+selection_fg = '#cbc6b3'
+split = '#5c553d'
+visual_bell = '#1e1c14'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#030302'
+inactive_tab_edge = '#1e1c14'
+
+[colors.tab_bar.active_tab]
+bg_color = '#d4b42a'
+fg_color = '#030302'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#090806'
+fg_color = '#cbc6b3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0f0e0a'
+fg_color = '#cbc6b3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1e1c14'
+fg_color = '#cbc6b3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#2e2b1e'
+fg_color = '#cbc6b3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Adam Eden'

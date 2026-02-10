@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#27382b',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#a0bea8',
+]
+background = '#121a14'
+brights = [
+  '#314737',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#91b39a',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#0a0e0b'
+foreground = '#bfd2c4'
+scrollbar_thumb = '#314737'
+selection_bg = '#314737'
+selection_fg = '#bfd2c4'
+split = '#46654e'
+visual_bell = '#1c2920'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#0a0e0b'
+inactive_tab_edge = '#1c2920'
+
+[colors.tab_bar.active_tab]
+bg_color = '#2ecc71'
+fg_color = '#0a0e0b'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0e140f'
+fg_color = '#bfd2c4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#121a14'
+fg_color = '#bfd2c4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1c2920'
+fg_color = '#bfd2c4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#27382b'
+fg_color = '#bfd2c4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Adam Soft'

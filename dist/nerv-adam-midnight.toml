@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#242424',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#a3a3a3',
+]
+background = '#0a0a0a'
+brights = [
+  '#303030',
+  '#e01a1a',
+  '#2ecc71',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#969696',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#000000'
+foreground = '#bdbdbd'
+scrollbar_thumb = '#303030'
+selection_bg = '#303030'
+selection_fg = '#bdbdbd'
+split = '#4a4a4a'
+visual_bell = '#171717'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#000000'
+inactive_tab_edge = '#171717'
+
+[colors.tab_bar.active_tab]
+bg_color = '#58d68d'
+fg_color = '#000000'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#050505'
+fg_color = '#bdbdbd'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a0a0a'
+fg_color = '#bdbdbd'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#171717'
+fg_color = '#bdbdbd'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#242424'
+fg_color = '#bdbdbd'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Adam Midnight'
