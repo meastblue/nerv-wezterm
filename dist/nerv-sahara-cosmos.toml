@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#273948',
+  '#fd604f',
+  '#AFEA7B',
+  '#F5DF76',
+  '#7fd7f5',
+  '#e4a3df',
+  '#22D3B1',
+  '#a1b9cd',
+]
+background = '#151f27'
+brights = [
+  '#304759',
+  '#fd604f',
+  '#AFEA7B',
+  '#F5DF76',
+  '#7fd7f5',
+  '#e4a3df',
+  '#22D3B1',
+  '#91adc4',
+]
+compose_cursor = '#ffaa7d'
+cursor_bg = '#EC7886'
+cursor_border = '#EC7886'
+cursor_fg = '#0e141a'
+foreground = '#c3d2de'
+scrollbar_thumb = '#304759'
+selection_bg = '#304759'
+selection_fg = '#c3d2de'
+split = '#42617a'
+visual_bell = '#1e2c38'
+
+[colors.indexed]
+16 = '#ffaa7d'
+17 = '#EC7886'
+
+[colors.tab_bar]
+background = '#0e141a'
+inactive_tab_edge = '#1e2c38'
+
+[colors.tab_bar.active_tab]
+bg_color = '#dbefff'
+fg_color = '#0e141a'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#111a20'
+fg_color = '#c3d2de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#151f27'
+fg_color = '#c3d2de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1e2c38'
+fg_color = '#c3d2de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#273948'
+fg_color = '#c3d2de'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Sahara Cosmos'

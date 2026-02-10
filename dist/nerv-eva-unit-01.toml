@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#231b36',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#9c8bc5',
+]
+background = '#0d0a14'
+brights = [
+  '#2e2447',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#8e7abd',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#040306'
+foreground = '#baaed5'
+scrollbar_thumb = '#2e2447'
+selection_bg = '#2e2447'
+selection_fg = '#baaed5'
+split = '#443569'
+visual_bell = '#181325'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#040306'
+inactive_tab_edge = '#181325'
+
+[colors.tab_bar.active_tab]
+bg_color = '#9b59b6'
+fg_color = '#040306'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#09070d'
+fg_color = '#baaed5'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0d0a14'
+fg_color = '#baaed5'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#181325'
+fg_color = '#baaed5'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#231b36'
+fg_color = '#baaed5'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Eva Unit-01'

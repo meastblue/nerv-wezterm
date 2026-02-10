@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#24242f',
+  '#fd604f',
+  '#AFEA7B',
+  '#F5DF76',
+  '#7fd7f5',
+  '#e4a3df',
+  '#22D3B1',
+  '#9e9eb4',
+]
+background = '#0e0e12'
+brights = [
+  '#2f2f3d',
+  '#fd604f',
+  '#AFEA7B',
+  '#F5DF76',
+  '#7fd7f5',
+  '#e4a3df',
+  '#22D3B1',
+  '#9090a9',
+]
+compose_cursor = '#ffaa7d'
+cursor_bg = '#EC7886'
+cursor_border = '#EC7886'
+cursor_fg = '#050507'
+foreground = '#bcbcc9'
+scrollbar_thumb = '#2f2f3d'
+selection_bg = '#2f2f3d'
+selection_fg = '#bcbcc9'
+split = '#46465a'
+visual_bell = '#191920'
+
+[colors.indexed]
+16 = '#ffaa7d'
+17 = '#EC7886'
+
+[colors.tab_bar]
+background = '#050507'
+inactive_tab_edge = '#191920'
+
+[colors.tab_bar.active_tab]
+bg_color = '#dbdeea'
+fg_color = '#050507'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0a0a0c'
+fg_color = '#bcbcc9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0e0e12'
+fg_color = '#bcbcc9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#191920'
+fg_color = '#bcbcc9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#24242f'
+fg_color = '#bcbcc9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv HC - HC Obsidian'

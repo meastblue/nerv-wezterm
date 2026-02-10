@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1e2e1e',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#94b794',
+]
+background = '#0a0f0a'
+brights = [
+  '#293d29',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#84ad84',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#020302'
+foreground = '#b3cbb3'
+scrollbar_thumb = '#293d29'
+selection_bg = '#293d29'
+selection_fg = '#b3cbb3'
+split = '#3d5c3d'
+visual_bell = '#141e14'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#020302'
+inactive_tab_edge = '#141e14'
+
+[colors.tab_bar.active_tab]
+bg_color = '#5fa052'
+fg_color = '#020302'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#060906'
+fg_color = '#b3cbb3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a0f0a'
+fg_color = '#b3cbb3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#141e14'
+fg_color = '#b3cbb3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1e2e1e'
+fg_color = '#b3cbb3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Eva Terminal'

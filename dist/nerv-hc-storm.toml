@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#14456d',
+  '#ff7e70',
+  '#9dffbd',
+  '#fff0a6',
+  '#82c4ff',
+  '#f1c6ee',
+  '#22D3B1',
+  '#94c5ec',
+]
+background = '#0c2a42'
+brights = [
+  '#185383',
+  '#ff7e70',
+  '#9dffbd',
+  '#fff0a6',
+  '#82c4ff',
+  '#f1c6ee',
+  '#22D3B1',
+  '#7fb9e8',
+]
+compose_cursor = '#ffaf94'
+cursor_bg = '#f994bf'
+cursor_border = '#f994bf'
+cursor_fg = '#091f31'
+foreground = '#c0dcf3'
+scrollbar_thumb = '#185383'
+selection_bg = '#185383'
+selection_fg = '#c0dcf3'
+split = '#206fae'
+visual_bell = '#103858'
+
+[colors.indexed]
+16 = '#ffaf94'
+17 = '#f994bf'
+
+[colors.tab_bar]
+background = '#091f31'
+inactive_tab_edge = '#103858'
+
+[colors.tab_bar.active_tab]
+bg_color = '#9dffd9'
+fg_color = '#091f31'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0a2539'
+fg_color = '#c0dcf3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0c2a42'
+fg_color = '#c0dcf3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#103858'
+fg_color = '#c0dcf3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#14456d'
+fg_color = '#c0dcf3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv HC - HC Storm'

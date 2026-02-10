@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1e1e2f',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#9191bb',
+]
+background = '#0a0a10'
+brights = [
+  '#27273f',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#8282b1',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#020203'
+foreground = '#b1b1ce'
+scrollbar_thumb = '#27273f'
+selection_bg = '#27273f'
+selection_fg = '#b1b1ce'
+split = '#3b3b5e'
+visual_bell = '#141420'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#020203'
+inactive_tab_edge = '#141420'
+
+[colors.tab_bar.active_tab]
+bg_color = '#4493c5'
+fg_color = '#020203'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#06060a'
+fg_color = '#b1b1ce'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a0a10'
+fg_color = '#b1b1ce'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#141420'
+fg_color = '#b1b1ce'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1e1e2f'
+fg_color = '#b1b1ce'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Eva Geofront'

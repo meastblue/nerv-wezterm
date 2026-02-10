@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#8b5938',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#d8b59d',
+]
+background = '#f5ece6'
+brights = [
+  '#9d653f',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#dfc2af',
+]
+compose_cursor = '#b96000'
+cursor_bg = '#da2a5f'
+cursor_border = '#da2a5f'
+cursor_fg = '#f5ece6'
+foreground = '#221610'
+scrollbar_thumb = '#d8b59d'
+selection_bg = '#d8b59d'
+selection_fg = '#221610'
+split = '#d1a78b'
+visual_bell = '#e6d0c2'
+
+[colors.indexed]
+16 = '#b96000'
+17 = '#da2a5f'
+
+[colors.tab_bar]
+background = '#e9d6c9'
+inactive_tab_edge = '#e6d0c2'
+
+[colors.tab_bar.active_tab]
+bg_color = '#d4652a'
+fg_color = '#ffffff'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#efe1d7'
+fg_color = '#221610'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#f5ece6'
+fg_color = '#221610'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#e6d0c2'
+fg_color = '#221610'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#dfc2af'
+fg_color = '#221610'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Light - Nūr Peach'

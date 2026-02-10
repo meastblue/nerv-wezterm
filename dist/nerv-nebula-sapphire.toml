@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#262d36',
+  '#E35535',
+  '#00a884',
+  '#c7910c',
+  '#11B7D4',
+  '#d46ec0',
+  '#38c7bd',
+  '#a0acbb',
+]
+background = '#111418'
+brights = [
+  '#313945',
+  '#E35535',
+  '#00a884',
+  '#c7910c',
+  '#11B7D4',
+  '#d46ec0',
+  '#38c7bd',
+  '#919eb1',
+]
+compose_cursor = '#d4770c'
+cursor_bg = '#c62f52'
+cursor_border = '#c62f52'
+cursor_fg = '#090a0c'
+foreground = '#bec6d0'
+scrollbar_thumb = '#313945'
+selection_bg = '#313945'
+selection_fg = '#bec6d0'
+split = '#465263'
+visual_bell = '#1c2027'
+
+[colors.indexed]
+16 = '#d4770c'
+17 = '#c62f52'
+
+[colors.tab_bar]
+background = '#090a0c'
+inactive_tab_edge = '#1c2027'
+
+[colors.tab_bar.active_tab]
+bg_color = '#11B7D4'
+fg_color = '#090a0c'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0d0f12'
+fg_color = '#bec6d0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#111418'
+fg_color = '#bec6d0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#1c2027'
+fg_color = '#bec6d0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#262d36'
+fg_color = '#bec6d0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Nebula Sapphire'

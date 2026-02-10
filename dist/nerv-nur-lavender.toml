@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#644380',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#bca5d0',
+]
+background = '#eee8f3'
+brights = [
+  '#714b91',
+  '#d12525',
+  '#008b17',
+  '#c08403',
+  '#0076c5',
+  '#c121a4',
+  '#008f8f',
+  '#c9b6d9',
+]
+compose_cursor = '#b96000'
+cursor_bg = '#da2a5f'
+cursor_border = '#da2a5f'
+cursor_fg = '#eee8f3'
+foreground = '#201c27'
+scrollbar_thumb = '#bca5d0'
+selection_bg = '#bca5d0'
+selection_fg = '#201c27'
+split = '#b094c7'
+visual_bell = '#d5c6e2'
+
+[colors.indexed]
+16 = '#b96000'
+17 = '#da2a5f'
+
+[colors.tab_bar]
+background = '#dacde5'
+inactive_tab_edge = '#d5c6e2'
+
+[colors.tab_bar.active_tab]
+bg_color = '#7b4fbf'
+fg_color = '#ffffff'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#e4dbec'
+fg_color = '#201c27'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#eee8f3'
+fg_color = '#201c27'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#d5c6e2'
+fg_color = '#201c27'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#c9b6d9'
+fg_color = '#201c27'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Light - Nūr Lavender'

@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#bacfea',
+  '#ee5f50',
+  '#41ad4e',
+  '#e39c03',
+  '#0aa3d6',
+  '#f08ad9',
+  '#00b696',
+  '#3264a7',
+]
+background = '#f5f8fc'
+brights = [
+  '#a7c1e4',
+  '#ee5f50',
+  '#41ad4e',
+  '#e39c03',
+  '#0aa3d6',
+  '#f08ad9',
+  '#00b696',
+  '#3870ba',
+]
+compose_cursor = '#e3946a'
+cursor_bg = '#ed7b89'
+cursor_border = '#ed7b89'
+cursor_fg = '#d6e2f3'
+foreground = '#272d34'
+scrollbar_thumb = '#a7c1e4'
+selection_bg = '#a7c1e4'
+selection_fg = '#272d34'
+split = '#93b3df'
+visual_bell = '#ceddf0'
+
+[colors.indexed]
+16 = '#e3946a'
+17 = '#ed7b89'
+
+[colors.tab_bar]
+background = '#d6e2f3'
+inactive_tab_edge = '#ceddf0'
+
+[colors.tab_bar.active_tab]
+bg_color = '#444c54'
+fg_color = '#d6e2f3'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#e5edf7'
+fg_color = '#272d34'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#f5f8fc'
+fg_color = '#272d34'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#ceddf0'
+fg_color = '#272d34'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#bacfea'
+fg_color = '#272d34'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv HC - HC Ivory'

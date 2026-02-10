@@ -1,6 +1,6 @@
 /**
- * NERV WezTerm Theme Generator
- * Generates TOML color scheme files for WezTerm
+ * Nerv WezTerm Theme Generator v1.0.0
+ * Generates TOML color scheme files + Lua plugin matching nerv-zed palettes
  */
 
 import { writeFileSync, mkdirSync } from "fs";
@@ -11,40 +11,25 @@ import { colord as c } from "colord";
 // =============================================================================
 
 interface SyntaxColors {
-  blue: string;
-  green: string;
-  greenAlt: string;
-  orange: string;
-  pink: string;
-  purple: string;
-  red: string;
-  salmon: string;
-  turquoise: string;
-  yellow: string;
+  blue: string; green: string; greenAlt: string; orange: string;
+  pink: string; purple: string; red: string; salmon: string;
+  turquoise: string; yellow: string;
 }
 
 interface SurfaceColors {
-  crust: string;
-  mantle: string;
-  base: string;
-  surface0: string;
-  surface1: string;
-  surface2: string;
+  crust: string; mantle: string; base: string;
+  surface0: string; surface1: string; surface2: string;
 }
 
 interface TextColors {
-  overlay0: string;
-  overlay1: string;
-  overlay2: string;
-  subtext0: string;
-  subtext1: string;
-  text: string;
+  overlay0: string; overlay1: string; overlay2: string;
+  subtext0: string; subtext1: string; text: string;
 }
 
 interface NervPalette {
   name: string;
   identifier: string;
-  dark: boolean;
+  appearance: "dark" | "light" | "hc";
   colors: SyntaxColors;
   surfaces: SurfaceColors;
   texts: TextColors;
@@ -52,32 +37,32 @@ interface NervPalette {
 }
 
 // =============================================================================
-// HELPER FUNCTIONS
+// HELPERS
 // =============================================================================
 
-function generateSurfacesDark(base: string): SurfaceColors {
+function surfacesDark(base: string): SurfaceColors {
   return {
     crust: c(base).darken(0.04).toHex(),
     mantle: c(base).darken(0.02).toHex(),
-    base: base,
+    base,
     surface0: c(base).lighten(0.05).toHex(),
     surface1: c(base).lighten(0.10).toHex(),
     surface2: c(base).lighten(0.15).toHex(),
   };
 }
 
-function generateSurfacesLight(base: string): SurfaceColors {
+function surfacesLight(base: string): SurfaceColors {
   return {
     crust: c(base).darken(0.08).toHex(),
     mantle: c(base).darken(0.04).toHex(),
-    base: base,
+    base,
     surface0: c(base).darken(0.10).toHex(),
     surface1: c(base).darken(0.15).toHex(),
     surface2: c(base).darken(0.20).toHex(),
   };
 }
 
-function generateTextsDark(base: string): TextColors {
+function textsDark(base: string): TextColors {
   return {
     overlay0: c(base).lighten(0.25).toHex(),
     overlay1: c(base).lighten(0.35).toHex(),
@@ -88,7 +73,7 @@ function generateTextsDark(base: string): TextColors {
   };
 }
 
-function generateTextsLight(base: string, primary: string): TextColors {
+function textsLight(base: string, primary: string): TextColors {
   return {
     overlay0: c(base).darken(0.25).toHex(),
     overlay1: c(base).darken(0.35).toHex(),
@@ -99,141 +84,189 @@ function generateTextsLight(base: string, primary: string): TextColors {
   };
 }
 
+function dark(name: string, id: string, colors: SyntaxColors, base: string, accent: string, appearance: "dark" | "hc" = "dark"): NervPalette {
+  return { name, identifier: id, appearance, colors, surfaces: surfacesDark(base), texts: textsDark(base), accent };
+}
+
+function light(name: string, id: string, colors: SyntaxColors, base: string, accent: string): NervPalette {
+  return { name, identifier: id, appearance: "light", colors, surfaces: surfacesLight(base), texts: textsLight(base, accent), accent };
+}
+
 // =============================================================================
-// PALETTES
+// COLOR PALETTES (exact from nerv-zed)
 // =============================================================================
 
-const auroraColors: SyntaxColors = {
+const qadrColors: SyntaxColors = {
   blue: "#69C3FF", green: "#3CEC85", greenAlt: "#A4EF58", orange: "#FF955C",
   pink: "#F38CEC", purple: "#B78AFF", red: "#E35535", salmon: "#FF738A",
   turquoise: "#22ECDB", yellow: "#EACD61",
 };
 
-const emberColors: SyntaxColors = {
+const orbitalColors: SyntaxColors = {
   blue: "#78dce8", green: "#a9dc76", greenAlt: "#b7d175", orange: "#fc9867",
   pink: "#e991e3", purple: "#ab9df2", red: "#fc6a67", salmon: "#ff6188",
   turquoise: "#78e8c6", yellow: "#ffd866",
 };
 
-const neonColors: SyntaxColors = {
+const djinnColors: SyntaxColors = {
   blue: "#28A9FF", green: "#42DD76", greenAlt: "#b7d175", orange: "#FF7135",
   pink: "#E66DFF", purple: "#A95EFF", red: "#D62C2C", salmon: "#FF478D",
   turquoise: "#14E5D4", yellow: "#FFB638",
 };
 
-const eclipseColors: SyntaxColors = {
-  blue: "#4db0f7", green: "#a5b82e", greenAlt: "#97e24c", orange: "#e8913b",
-  pink: "#df96d9", purple: "#858bf7", red: "#f45645", salmon: "#f154a0",
-  turquoise: "#26bbae", yellow: "#e2ae10",
-};
-
-const depthsColors: SyntaxColors = {
-  blue: "#5fb2df", green: "#97c892", greenAlt: "#A4EF58", orange: "#DC8255",
-  pink: "#d194cd", purple: "#978dd6", red: "#B4552D", salmon: "#ee5d75",
-  turquoise: "#59c6c8", yellow: "#f6cc73",
-};
-
-const espressoColors: SyntaxColors = {
-  blue: "#6EDDD6", green: "#9DCC57", greenAlt: "#7E9E2D", orange: "#ffa777",
-  pink: "#E480AD", purple: "#9991F1", red: "#f24343", salmon: "#f77a6a",
-  turquoise: "#3ceaa8", yellow: "#f7d979",
-};
-
-const crystalColors: SyntaxColors = {
+const saharaColors: SyntaxColors = {
   blue: "#7fd7f5", green: "#AFEA7B", greenAlt: "#A4EF58", orange: "#ffaa7d",
   pink: "#e4a3df", purple: "#bc98ff", red: "#fd604f", salmon: "#EC7886",
   turquoise: "#22D3B1", yellow: "#F5DF76",
 };
 
-const daylightColors: SyntaxColors = {
+const nebulaColors: SyntaxColors = {
+  blue: "#11B7D4", green: "#00a884", greenAlt: "#3585bb", orange: "#d4770c",
+  pink: "#d46ec0", purple: "#a85ff1", red: "#E35535", salmon: "#c62f52",
+  turquoise: "#38c7bd", yellow: "#c7910c",
+};
+
+const evaColors: SyntaxColors = {
+  blue: "#4493c5", green: "#5fa052", greenAlt: "#8ab648", orange: "#e8641b",
+  pink: "#d44a8a", purple: "#9b59b6", red: "#e01a1a", salmon: "#e84545",
+  turquoise: "#2ba5a5", yellow: "#d4a017",
+};
+
+const nurBaseColors: SyntaxColors = {
   blue: "#0073d1", green: "#189433", greenAlt: "#5e8516", orange: "#d06200",
   pink: "#e022b4", purple: "#8737e6", red: "#d03333", salmon: "#e8386a",
   turquoise: "#009999", yellow: "#bb9600",
 };
 
-const sorbetColors: SyntaxColors = {
+const nurSorbetColors: SyntaxColors = {
   blue: "#0076c5", green: "#008b17", greenAlt: "#668b07", orange: "#b96000",
   pink: "#c121a4", purple: "#7522d3", red: "#d12525", salmon: "#da2a5f",
   turquoise: "#008f8f", yellow: "#c08403",
 };
 
+const hcDarkColors: SyntaxColors = {
+  blue: "#7fd7f5", green: "#AFEA7B", greenAlt: "#A4EF58", orange: "#ffaa7d",
+  pink: "#e4a3df", purple: "#bc98ff", red: "#fd604f", salmon: "#EC7886",
+  turquoise: "#22D3B1", yellow: "#F5DF76",
+};
+
+const hcStormColors: SyntaxColors = {
+  blue: "#82c4ff", green: "#9dffbd", greenAlt: "#A4EF58", orange: "#ffaf94",
+  pink: "#f1c6ee", purple: "#b8b3ff", red: "#ff7e70", salmon: "#f994bf",
+  turquoise: "#22D3B1", yellow: "#fff0a6",
+};
+
+const hcIvoryColors: SyntaxColors = {
+  blue: "#0aa3d6", green: "#41ad4e", greenAlt: "#589f11", orange: "#e3946a",
+  pink: "#f08ad9", purple: "#b377e3", red: "#ee5f50", salmon: "#ed7b89",
+  turquoise: "#00b696", yellow: "#e39c03",
+};
+
+// =============================================================================
+// ALL 31 PALETTES
+// =============================================================================
+
 const palettes: NervPalette[] = [
-  // Aurora family
-  { name: "Aurora Frost", identifier: "aurora-frost", dark: true, colors: auroraColors,
-    surfaces: generateSurfacesDark("#1c2433"), texts: generateTextsDark("#1c2433"), accent: "#8196b5" },
-  { name: "Aurora Storm", identifier: "aurora-storm", dark: true, colors: auroraColors,
-    surfaces: generateSurfacesDark("#222A38"), texts: generateTextsDark("#222A38"), accent: "#9DACC3" },
-  { name: "Aurora Berry", identifier: "aurora-berry", dark: true, colors: auroraColors,
-    surfaces: generateSurfacesDark("#111422"), texts: generateTextsDark("#111422"), accent: "#8eb0e6" },
-  // Ember family
-  { name: "Ember Terra", identifier: "ember-terra", dark: true, colors: emberColors,
-    surfaces: generateSurfacesDark("#262329"), texts: generateTextsDark("#262329"), accent: "#b0a2a6" },
-  { name: "Ember Steel", identifier: "ember-steel", dark: true, colors: emberColors,
-    surfaces: generateSurfacesDark("#1e212b"), texts: generateTextsDark("#1e212b"), accent: "#98a2b5" },
-  { name: "Ember Stone", identifier: "ember-stone", dark: true, colors: emberColors,
-    surfaces: generateSurfacesDark("#2A2D33"), texts: generateTextsDark("#2A2D33"), accent: "#9AA2A6" },
-  // Neon family
-  { name: "Neon Grape", identifier: "neon-grape", dark: true, colors: neonColors,
-    surfaces: generateSurfacesDark("#171131"), texts: generateTextsDark("#171131"), accent: "#A680FF" },
-  { name: "Neon Void", identifier: "neon-void", dark: true, colors: neonColors,
-    surfaces: generateSurfacesDark("#141417"), texts: generateTextsDark("#141417"), accent: "#AAAAAA" },
-  // Eclipse
-  { name: "Eclipse", identifier: "eclipse", dark: true, colors: eclipseColors,
-    surfaces: generateSurfacesDark("#132c34"), texts: generateTextsDark("#132c34"), accent: "#47cfc4" },
-  // Depths
-  { name: "Depths", identifier: "depths", dark: true, colors: depthsColors,
-    surfaces: generateSurfacesDark("#1a2b34"), texts: generateTextsDark("#1a2b34"), accent: "#97c892" },
-  // Espresso
-  { name: "Espresso", identifier: "espresso", dark: true, colors: espressoColors,
-    surfaces: generateSurfacesDark("#292423"), texts: generateTextsDark("#292423"), accent: "#F09177" },
-  // Crystal family
-  { name: "Crystal Onyx", identifier: "crystal-onyx", dark: true, colors: crystalColors,
-    surfaces: generateSurfacesDark("#181820"), texts: generateTextsDark("#181820"), accent: "#dbdeea" },
-  { name: "Crystal Cosmos", identifier: "crystal-cosmos", dark: true, colors: crystalColors,
-    surfaces: generateSurfacesDark("#151f27"), texts: generateTextsDark("#151f27"), accent: "#dbefff" },
-  // Light themes
-  { name: "Daylight", identifier: "daylight", dark: false, colors: daylightColors,
-    surfaces: generateSurfacesLight("#f3f4f5"), texts: generateTextsLight("#f3f4f5", "#22a5c9"), accent: "#22a5c9" },
-  { name: "Sorbet Cherry", identifier: "sorbet-cherry", dark: false, colors: sorbetColors,
-    surfaces: generateSurfacesLight("#f1e8eb"), texts: generateTextsLight("#f1e8eb", "#d1174f"), accent: "#d1174f" },
-  { name: "Sorbet Mint", identifier: "sorbet-mint", dark: false, colors: sorbetColors,
-    surfaces: generateSurfacesLight("#edf3ee"), texts: generateTextsLight("#edf3ee", "#2a9b7d"), accent: "#2a9b7d" },
-  { name: "Sorbet Grape", identifier: "sorbet-grape", dark: false, colors: sorbetColors,
-    surfaces: generateSurfacesLight("#dad9eb"), texts: generateTextsLight("#dad9eb", "#422eb0"), accent: "#422eb0" },
+  // Qadr (3)
+  dark("Qadr Fajr", "qadr-fajr", qadrColors, "#1c2433", "#8196b5"),
+  dark("Qadr Layl", "qadr-layl", qadrColors, "#222A38", "#9DACC3"),
+  dark("Qadr Najm", "qadr-najm", qadrColors, "#111422", "#8eb0e6"),
+
+  // Orbital (3)
+  dark("Orbital Terra", "orbital-terra", orbitalColors, "#262329", "#b0a2a6"),
+  dark("Orbital Steel", "orbital-steel", orbitalColors, "#1e212b", "#98a2b5"),
+  dark("Orbital Stone", "orbital-stone", orbitalColors, "#2A2D33", "#9AA2A6"),
+
+  // Djinn (2)
+  dark("Djinn Ifrit", "djinn-ifrit", djinnColors, "#171131", "#A680FF"),
+  dark("Djinn Void", "djinn-void", djinnColors, "#141417", "#AAAAAA"),
+
+  // Sahara (2)
+  dark("Sahara Onyx", "sahara-onyx", saharaColors, "#181820", "#dbdeea"),
+  dark("Sahara Cosmos", "sahara-cosmos", saharaColors, "#151f27", "#dbefff"),
+
+  // Nebula (5)
+  dark("Nebula Sapphire", "nebula-sapphire", nebulaColors, "#111418", "#11B7D4"),
+  dark("Nebula Amber", "nebula-amber", nebulaColors, "#111418", "#c7910c"),
+  dark("Nebula Crimson", "nebula-crimson", nebulaColors, "#111418", "#c62f52"),
+  dark("Nebula Jade", "nebula-jade", nebulaColors, "#111418", "#38c7bd"),
+  dark("Nebula Violet", "nebula-violet", nebulaColors, "#111418", "#a85ff1"),
+
+  // Eva (6)
+  dark("Eva", "eva", evaColors, "#0a0a0a", "#e01a1a"),
+  dark("Eva Unit-01", "eva-unit-01", evaColors, "#0d0a14", "#9b59b6"),
+  dark("Eva Unit-02", "eva-unit-02", evaColors, "#140a0a", "#e8641b"),
+  dark("Eva Terminal", "eva-terminal", evaColors, "#0a0f0a", "#5fa052"),
+  dark("Eva Geofront", "eva-geofront", evaColors, "#0a0a10", "#4493c5"),
+  dark("Eva Soft", "eva-soft", evaColors, "#1a1214", "#e01a1a"),
+
+  // Nūr (6)
+  light("Nūr", "nur", nurBaseColors, "#f3f4f5", "#22a5c9"),
+  light("Nūr Cherry", "nur-cherry", nurSorbetColors, "#f1e8eb", "#d1174f"),
+  light("Nūr Mint", "nur-mint", nurSorbetColors, "#edf3ee", "#2a9b7d"),
+  light("Nūr Grape", "nur-grape", nurSorbetColors, "#dad9eb", "#422eb0"),
+  light("Nūr Peach", "nur-peach", nurSorbetColors, "#f5ece6", "#d4652a"),
+  light("Nūr Lavender", "nur-lavender", nurSorbetColors, "#eee8f3", "#7b4fbf"),
+
+  // HC (4)
+  dark("HC Obsidian", "hc-obsidian", hcDarkColors, "#0e0e12", "#dbdeea", "hc"),
+  dark("HC Storm", "hc-storm", hcStormColors, "#0c2a42", "#9dffd9", "hc"),
+  dark("HC Abyss", "hc-abyss", hcDarkColors, "#080810", "#f0f0ff", "hc"),
+  // HC Ivory is special — light with custom UI colors
+  (() => {
+    const p = light("HC Ivory", "hc-ivory", hcIvoryColors, "#f5f8fc", "#444c54");
+    p.appearance = "hc";
+    // Override with exact Zed values
+    p.texts = {
+      overlay0: c("#f5f8fc").darken(0.25).toHex(),
+      overlay1: c("#f5f8fc").darken(0.35).toHex(),
+      overlay2: c("#f5f8fc").darken(0.45).toHex(),
+      subtext0: c("#f5f8fc").darken(0.50).toHex(),
+      subtext1: c("#f5f8fc").darken(0.55).toHex(),
+      text: "#272d34",
+    };
+    return p;
+  })(),
 ];
 
 // =============================================================================
 // TOML GENERATOR
 // =============================================================================
 
-function generateToml(p: NervPalette): string {
-  const { colors, surfaces, texts, accent, dark } = p;
+function labelFor(p: NervPalette): string {
+  if (p.appearance === "hc") return "HC";
+  if (p.appearance === "light") return "Light";
+  return "Dark";
+}
 
-  // For light themes, use different cursor colors
-  const cursorFg = dark ? surfaces.crust : surfaces.base;
+function generateToml(p: NervPalette): string {
+  const { colors, surfaces, texts, accent } = p;
+  const isDark = p.appearance !== "light";
+
+  const cursorFg = isDark ? surfaces.crust : surfaces.base;
   const cursorBg = colors.salmon;
 
   return `[colors]
 ansi = [
-  '${dark ? surfaces.surface1 : texts.subtext1}',
+  '${isDark ? surfaces.surface1 : texts.subtext1}',
   '${colors.red}',
   '${colors.green}',
   '${colors.yellow}',
   '${colors.blue}',
   '${colors.pink}',
   '${colors.turquoise}',
-  '${dark ? texts.subtext1 : surfaces.surface2}',
+  '${isDark ? texts.subtext1 : surfaces.surface2}',
 ]
 background = '${surfaces.base}'
 brights = [
-  '${dark ? surfaces.surface2 : texts.subtext0}',
+  '${isDark ? surfaces.surface2 : texts.subtext0}',
   '${colors.red}',
   '${colors.green}',
   '${colors.yellow}',
   '${colors.blue}',
   '${colors.pink}',
   '${colors.turquoise}',
-  '${dark ? texts.subtext0 : surfaces.surface1}',
+  '${isDark ? texts.subtext0 : surfaces.surface1}',
 ]
 compose_cursor = '${colors.orange}'
 cursor_bg = '${cursorBg}'
@@ -256,7 +289,7 @@ inactive_tab_edge = '${surfaces.surface0}'
 
 [colors.tab_bar.active_tab]
 bg_color = '${accent}'
-fg_color = '${dark ? surfaces.crust : "#ffffff"}'
+fg_color = '${isDark ? surfaces.crust : "#ffffff"}'
 intensity = 'Normal'
 italic = false
 strikethrough = false
@@ -297,16 +330,16 @@ underline = 'None'
 [metadata]
 aliases = []
 author = 'meastblue'
-name = 'NERV ${p.dark ? "Dark" : "Light"} - ${p.name}'
+name = 'Nerv ${labelFor(p)} - ${p.name}'
 `;
 }
 
 // =============================================================================
-// LUA PLUGIN GENERATOR
+// LUA PLUGIN
 // =============================================================================
 
-function generateLuaColors(p: NervPalette): string {
-  const { colors, surfaces, texts, accent, name, identifier } = p;
+function luaColors(p: NervPalette): string {
+  const { colors, surfaces, texts, accent, identifier } = p;
   return `\t["${identifier}"] = {
 \t\trosewater = "${colors.salmon}",
 \t\tflamingo = "${colors.orange}",
@@ -339,8 +372,10 @@ function generateLuaColors(p: NervPalette): string {
 }
 
 function generateLuaPlugin(): string {
-  const colorEntries = palettes.map(p => generateLuaColors(p)).join("\n");
-  const mappingEntries = palettes.map(p => `\t["${p.identifier}"] = "NERV ${p.dark ? "Dark" : "Light"} - ${p.name}",`).join("\n");
+  const colorEntries = palettes.map(p => luaColors(p)).join("\n");
+  const mappingEntries = palettes.map(p =>
+    `\t["${p.identifier}"] = "Nerv ${labelFor(p)} - ${p.name}",`
+  ).join("\n");
 
   return `local wezterm = require("wezterm")
 
@@ -359,7 +394,7 @@ function M.select(palette, flavor, accent)
 \tif not c then
 \t\terror("Unknown flavor: " .. tostring(flavor))
 \tend
-\t
+
 \tlocal isDark = c.base:sub(2, 3):lower() < "80"
 \tlocal accentColor = accent and c[accent] or c.accent
 
@@ -462,10 +497,10 @@ function M.apply_to_config(c, opts)
 \tend
 
 \tlocal defaults = {
-\t\tflavor = "aurora-frost",
+\t\tflavor = "qadr-fajr",
 \t\taccent = nil,
 \t\tsync = false,
-\t\tsync_flavors = { light = "daylight", dark = "aurora-frost" },
+\t\tsync_flavors = { light = "nur", dark = "qadr-fajr" },
 \t\tcolor_overrides = {},
 \t\ttoken_overrides = {},
 \t}
@@ -529,21 +564,24 @@ return M
 // MAIN
 // =============================================================================
 
-// Ensure directories exist
 mkdirSync("./dist", { recursive: true });
 mkdirSync("./plugin", { recursive: true });
 
-// Generate TOML files
+// Clean old dist
+import { readdirSync, unlinkSync } from "fs";
+for (const f of readdirSync("./dist")) {
+  unlinkSync(`./dist/${f}`);
+}
+
 for (const palette of palettes) {
   const toml = generateToml(palette);
   const filename = `./dist/nerv-${palette.identifier}.toml`;
   writeFileSync(filename, toml);
-  console.log(`✓ Generated ${filename}`);
+  console.log(`✓ ${filename}`);
 }
 
-// Generate Lua plugin
 const luaPlugin = generateLuaPlugin();
 writeFileSync("./plugin/init.lua", luaPlugin);
-console.log(`✓ Generated ./plugin/init.lua`);
+console.log(`✓ ./plugin/init.lua`);
 
-console.log(`\n✅ Generated ${palettes.length} WezTerm color schemes`);
+console.log(`\n✅ Generated ${palettes.length} Nerv WezTerm color schemes`);

@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#38272b',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#bea0a8',
+]
+background = '#1a1214'
+brights = [
+  '#473137',
+  '#e01a1a',
+  '#5fa052',
+  '#d4a017',
+  '#4493c5',
+  '#d44a8a',
+  '#2ba5a5',
+  '#b3919a',
+]
+compose_cursor = '#e8641b'
+cursor_bg = '#e84545'
+cursor_border = '#e84545'
+cursor_fg = '#0e0a0b'
+foreground = '#d2bfc4'
+scrollbar_thumb = '#473137'
+selection_bg = '#473137'
+selection_fg = '#d2bfc4'
+split = '#65464e'
+visual_bell = '#291c20'
+
+[colors.indexed]
+16 = '#e8641b'
+17 = '#e84545'
+
+[colors.tab_bar]
+background = '#0e0a0b'
+inactive_tab_edge = '#291c20'
+
+[colors.tab_bar.active_tab]
+bg_color = '#e01a1a'
+fg_color = '#0e0a0b'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#140e0f'
+fg_color = '#d2bfc4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#1a1214'
+fg_color = '#d2bfc4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#291c20'
+fg_color = '#d2bfc4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#38272b'
+fg_color = '#d2bfc4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Eva Soft'
