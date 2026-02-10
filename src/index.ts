@@ -1,5 +1,5 @@
 /**
- * Nube WezTerm Theme Generator
+ * NERV WezTerm Theme Generator
  * Generates TOML color scheme files for WezTerm
  */
 
@@ -41,7 +41,7 @@ interface TextColors {
   text: string;
 }
 
-interface NubePalette {
+interface NervPalette {
   name: string;
   identifier: string;
   dark: boolean;
@@ -157,7 +157,7 @@ const sorbetColors: SyntaxColors = {
   turquoise: "#008f8f", yellow: "#c08403",
 };
 
-const palettes: NubePalette[] = [
+const palettes: NervPalette[] = [
   // Aurora family
   { name: "Aurora Frost", identifier: "aurora-frost", dark: true, colors: auroraColors,
     surfaces: generateSurfacesDark("#1c2433"), texts: generateTextsDark("#1c2433"), accent: "#8196b5" },
@@ -206,7 +206,7 @@ const palettes: NubePalette[] = [
 // TOML GENERATOR
 // =============================================================================
 
-function generateToml(p: NubePalette): string {
+function generateToml(p: NervPalette): string {
   const { colors, surfaces, texts, accent, dark } = p;
 
   // For light themes, use different cursor colors
@@ -297,7 +297,7 @@ underline = 'None'
 [metadata]
 aliases = []
 author = 'meastblue'
-name = 'Nube ${p.dark ? "Dark" : "Light"} - ${p.name}'
+name = 'NERV ${p.dark ? "Dark" : "Light"} - ${p.name}'
 `;
 }
 
@@ -305,7 +305,7 @@ name = 'Nube ${p.dark ? "Dark" : "Light"} - ${p.name}'
 // LUA PLUGIN GENERATOR
 // =============================================================================
 
-function generateLuaColors(p: NubePalette): string {
+function generateLuaColors(p: NervPalette): string {
   const { colors, surfaces, texts, accent, name, identifier } = p;
   return `\t["${identifier}"] = {
 \t\trosewater = "${colors.salmon}",
@@ -340,7 +340,7 @@ function generateLuaColors(p: NubePalette): string {
 
 function generateLuaPlugin(): string {
   const colorEntries = palettes.map(p => generateLuaColors(p)).join("\n");
-  const mappingEntries = palettes.map(p => `\t["${p.identifier}"] = "Nube ${p.dark ? "Dark" : "Light"} - ${p.name}",`).join("\n");
+  const mappingEntries = palettes.map(p => `\t["${p.identifier}"] = "NERV ${p.dark ? "Dark" : "Light"} - ${p.name}",`).join("\n");
 
   return `local wezterm = require("wezterm")
 
@@ -536,7 +536,7 @@ mkdirSync("./plugin", { recursive: true });
 // Generate TOML files
 for (const palette of palettes) {
   const toml = generateToml(palette);
-  const filename = `./dist/nube-${palette.identifier}.toml`;
+  const filename = `./dist/nerv-${palette.identifier}.toml`;
   writeFileSync(filename, toml);
   console.log(`✓ Generated ${filename}`);
 }

@@ -1,46 +1,46 @@
 [colors]
 ansi = [
-  '#784958',
+  '#507856',
   '#d12525',
   '#008b17',
   '#c08403',
   '#0076c5',
   '#c121a4',
   '#008f8f',
-  '#caa9b4',
+  '#b0cab4',
 ]
-background = '#f1e8eb'
+background = '#edf3ee'
 brights = [
-  '#885264',
+  '#5a8762',
   '#d12525',
   '#008b17',
   '#c08403',
   '#0076c5',
   '#c121a4',
   '#008f8f',
-  '#d4b8c2',
+  '#bfd4c3',
 ]
 compose_cursor = '#b96000'
 cursor_bg = '#da2a5f'
 cursor_border = '#da2a5f'
-cursor_fg = '#f1e8eb'
-foreground = '#15070b'
-scrollbar_thumb = '#caa9b4'
-selection_bg = '#caa9b4'
-selection_fg = '#15070b'
-split = '#c199a6'
-visual_bell = '#dec8cf'
+cursor_fg = '#edf3ee'
+foreground = '#000000'
+scrollbar_thumb = '#b0cab4'
+selection_bg = '#b0cab4'
+selection_fg = '#000000'
+split = '#a1c0a6'
+visual_bell = '#cedfd1'
 
 [colors.indexed]
 16 = '#b96000'
 17 = '#da2a5f'
 
 [colors.tab_bar]
-background = '#e2cfd5'
-inactive_tab_edge = '#dec8cf'
+background = '#d5e3d7'
+inactive_tab_edge = '#cedfd1'
 
 [colors.tab_bar.active_tab]
-bg_color = '#d1174f'
+bg_color = '#2a9b7d'
 fg_color = '#ffffff'
 intensity = 'Normal'
 italic = false
@@ -48,32 +48,32 @@ strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '#e9dbe0'
-fg_color = '#15070b'
+bg_color = '#e1ebe2'
+fg_color = '#000000'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = '#f1e8eb'
-fg_color = '#15070b'
+bg_color = '#edf3ee'
+fg_color = '#000000'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab]
-bg_color = '#dec8cf'
-fg_color = '#15070b'
+bg_color = '#cedfd1'
+fg_color = '#000000'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab_hover]
-bg_color = '#d4b8c2'
-fg_color = '#15070b'
+bg_color = '#bfd4c3'
+fg_color = '#000000'
 intensity = 'Normal'
 italic = false
 strikethrough = false
@@ -82,4 +82,4 @@ underline = 'None'
 [metadata]
 aliases = []
 author = 'meastblue'
-name = 'Nube Light - Sorbet Cherry'
+name = 'NERV Light - Sorbet Mint'

@@ -1,7 +1,7 @@
 {
-  "name": "nube-wezterm",
+  "name": "nerv-wezterm",
   "version": "1.0.0",
-  "description": "Nube color schemes for WezTerm",
+  "description": "NERV color schemes for WezTerm",
   "type": "module",
   "packageManager": "bun@1.1.0",
   "scripts": {

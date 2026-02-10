@@ -1,79 +1,79 @@
 [colors]
 ansi = [
-  '#41464f',
+  '#333849',
   '#fc6a67',
   '#a9dc76',
   '#ffd866',
   '#78dce8',
   '#e991e3',
   '#78e8c6',
-  '#c2c6cd',
+  '#b2b7c9',
 ]
-background = '#2A2D33'
+background = '#1e212b'
 brights = [
-  '#4d525d',
+  '#3d4458',
   '#fc6a67',
   '#a9dc76',
   '#ffd866',
   '#78dce8',
   '#e991e3',
   '#78e8c6',
-  '#b4b9c1',
+  '#a3a9bf',
 ]
 compose_cursor = '#fc9867'
 cursor_bg = '#ff6188'
 cursor_border = '#ff6188'
-cursor_fg = '#212328'
-foreground = '#dee0e4'
-scrollbar_thumb = '#4d525d'
-selection_bg = '#4d525d'
-selection_fg = '#dee0e4'
-split = '#646b79'
-visual_bell = '#363941'
+cursor_fg = '#16181f'
+foreground = '#d0d3de'
+scrollbar_thumb = '#3d4458'
+selection_bg = '#3d4458'
+selection_fg = '#d0d3de'
+split = '#525b76'
+visual_bell = '#282d3a'
 
 [colors.indexed]
 16 = '#fc9867'
 17 = '#ff6188'
 
 [colors.tab_bar]
-background = '#212328'
-inactive_tab_edge = '#363941'
+background = '#16181f'
+inactive_tab_edge = '#282d3a'
 
 [colors.tab_bar.active_tab]
-bg_color = '#9AA2A6'
-fg_color = '#212328'
+bg_color = '#98a2b5'
+fg_color = '#16181f'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '#25282d'
-fg_color = '#dee0e4'
+bg_color = '#1a1c25'
+fg_color = '#d0d3de'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = '#2A2D33'
-fg_color = '#dee0e4'
+bg_color = '#1e212b'
+fg_color = '#d0d3de'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab]
-bg_color = '#363941'
-fg_color = '#dee0e4'
+bg_color = '#282d3a'
+fg_color = '#d0d3de'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab_hover]
-bg_color = '#41464f'
-fg_color = '#dee0e4'
+bg_color = '#333849'
+fg_color = '#d0d3de'
 intensity = 'Normal'
 italic = false
 strikethrough = false
@@ -82,4 +82,4 @@ underline = 'None'
 [metadata]
 aliases = []
 author = 'meastblue'
-name = 'Nube Dark - Ember Stone'
+name = 'NERV Dark - Ember Steel'

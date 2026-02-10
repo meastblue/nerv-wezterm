@@ -1,79 +1,79 @@
 [colors]
 ansi = [
-  '#354258',
+  '#222844',
   '#E35535',
   '#3CEC85',
   '#EACD61',
   '#69C3FF',
   '#F38CEC',
   '#22ECDB',
-  '#b8c2d4',
+  '#99a2cc',
 ]
-background = '#222A38'
+background = '#111422'
 brights = [
-  '#3f4e68',
+  '#2b3255',
   '#E35535',
   '#3CEC85',
   '#EACD61',
   '#69C3FF',
   '#F38CEC',
   '#22ECDB',
-  '#a8b5ca',
+  '#8893c4',
 ]
 compose_cursor = '#FF955C'
 cursor_bg = '#FF738A'
 cursor_border = '#FF738A'
-cursor_fg = '#1a202b'
-foreground = '#d8dde7'
-scrollbar_thumb = '#3f4e68'
-selection_bg = '#3f4e68'
-selection_fg = '#d8dde7'
-split = '#526587'
-visual_bell = '#2c3648'
+cursor_fg = '#0a0c14'
+foreground = '#bcc1dc'
+scrollbar_thumb = '#2b3255'
+selection_bg = '#2b3255'
+selection_fg = '#bcc1dc'
+split = '#3b4677'
+visual_bell = '#1a1e33'
 
 [colors.indexed]
 16 = '#FF955C'
 17 = '#FF738A'
 
 [colors.tab_bar]
-background = '#1a202b'
-inactive_tab_edge = '#2c3648'
+background = '#0a0c14'
+inactive_tab_edge = '#1a1e33'
 
 [colors.tab_bar.active_tab]
-bg_color = '#9DACC3'
-fg_color = '#1a202b'
+bg_color = '#8eb0e6'
+fg_color = '#0a0c14'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab]
-bg_color = '#1e2532'
-fg_color = '#d8dde7'
+bg_color = '#0e101b'
+fg_color = '#bcc1dc'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = '#222A38'
-fg_color = '#d8dde7'
+bg_color = '#111422'
+fg_color = '#bcc1dc'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab]
-bg_color = '#2c3648'
-fg_color = '#d8dde7'
+bg_color = '#1a1e33'
+fg_color = '#bcc1dc'
 intensity = 'Normal'
 italic = false
 strikethrough = false
 underline = 'None'
 
 [colors.tab_bar.new_tab_hover]
-bg_color = '#354258'
-fg_color = '#d8dde7'
+bg_color = '#222844'
+fg_color = '#bcc1dc'
 intensity = 'Normal'
 italic = false
 strikethrough = false
@@ -82,4 +82,4 @@ underline = 'None'
 [metadata]
 aliases = []
 author = 'meastblue'
-name = 'Nube Dark - Aurora Storm'
+name = 'NERV Dark - Aurora Berry'
