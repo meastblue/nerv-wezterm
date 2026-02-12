@@ -138,6 +138,12 @@ const adamColors: SyntaxColors = {
   turquoise: "#2ba5a5", yellow: "#d4a017",
 };
 
+const magiColors: SyntaxColors = {
+  blue: "#3a7a8c", green: "#4a8c5c", greenAlt: "#6aac7c", orange: "#e85d04",
+  pink: "#8a5a8a", purple: "#7a6aaa", red: "#c44a3a", salmon: "#d46a5a",
+  turquoise: "#5a9a8c", yellow: "#d4a017",
+};
+
 const nurBaseColors: SyntaxColors = {
   blue: "#0073d1", green: "#189433", greenAlt: "#5e8516", orange: "#d06200",
   pink: "#e022b4", purple: "#8737e6", red: "#d03333", salmon: "#e8386a",
@@ -205,6 +211,11 @@ const palettes: NervPalette[] = [
   dark("Eva Terminal", "eva-terminal", evaColors, "#0a0f0a", "#5fa052"),
   dark("Eva Geofront", "eva-geofront", evaColors, "#0a0a10", "#4493c5"),
   dark("Eva Soft", "eva-soft", evaColors, "#1a1214", "#e01a1a"),
+
+  // Magi (3)
+  dark("Magi Melchior", "magi-melchior", magiColors, "#0a1612", "#e85d04"),
+  dark("Magi Balthasar", "magi-balthasar", magiColors, "#0a1216", "#3a7a8c"),
+  dark("Magi Casper", "magi-casper", magiColors, "#0f1610", "#d4a017"),
 
   // Adam (6)
   dark("Adam", "adam", adamColors, "#0a0a0a", "#2ecc71"),

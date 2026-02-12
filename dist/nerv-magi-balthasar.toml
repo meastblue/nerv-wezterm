@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1a2f39',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#89b4c9',
+]
+background = '#0a1216'
+brights = [
+  '#223d4b',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#77a9c1',
+]
+compose_cursor = '#e85d04'
+cursor_bg = '#d46a5a'
+cursor_border = '#d46a5a'
+cursor_fg = '#040708'
+foreground = '#accad9'
+scrollbar_thumb = '#223d4b'
+selection_bg = '#223d4b'
+selection_fg = '#accad9'
+split = '#325a6e'
+visual_bell = '#122028'
+
+[colors.indexed]
+16 = '#e85d04'
+17 = '#d46a5a'
+
+[colors.tab_bar]
+background = '#040708'
+inactive_tab_edge = '#122028'
+
+[colors.tab_bar.active_tab]
+bg_color = '#3a7a8c'
+fg_color = '#040708'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#070c0f'
+fg_color = '#accad9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a1216'
+fg_color = '#accad9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#122028'
+fg_color = '#accad9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1a2f39'
+fg_color = '#accad9'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Magi Balthasar'

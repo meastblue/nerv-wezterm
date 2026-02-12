@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#1a392f',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#89c9b4',
+]
+background = '#0a1612'
+brights = [
+  '#224b3d',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#77c1a9',
+]
+compose_cursor = '#e85d04'
+cursor_bg = '#d46a5a'
+cursor_border = '#d46a5a'
+cursor_fg = '#040807'
+foreground = '#acd9ca'
+scrollbar_thumb = '#224b3d'
+selection_bg = '#224b3d'
+selection_fg = '#acd9ca'
+split = '#326e5a'
+visual_bell = '#122820'
+
+[colors.indexed]
+16 = '#e85d04'
+17 = '#d46a5a'
+
+[colors.tab_bar]
+background = '#040807'
+inactive_tab_edge = '#122820'
+
+[colors.tab_bar.active_tab]
+bg_color = '#e85d04'
+fg_color = '#040807'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#070f0c'
+fg_color = '#acd9ca'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0a1612'
+fg_color = '#acd9ca'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#122820'
+fg_color = '#acd9ca'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#1a392f'
+fg_color = '#acd9ca'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Magi Melchior'

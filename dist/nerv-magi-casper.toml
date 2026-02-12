@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#243426',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#9cbba0',
+]
+background = '#0f1610'
+brights = [
+  '#2e4331',
+  '#c44a3a',
+  '#4a8c5c',
+  '#d4a017',
+  '#3a7a8c',
+  '#8a5a8a',
+  '#5a9a8c',
+  '#8db192',
+]
+compose_cursor = '#e85d04'
+cursor_bg = '#d46a5a'
+cursor_border = '#d46a5a'
+cursor_fg = '#070a07'
+foreground = '#bbcfbe'
+scrollbar_thumb = '#2e4331'
+selection_bg = '#2e4331'
+selection_fg = '#bbcfbe'
+split = '#436247'
+visual_bell = '#19251b'
+
+[colors.indexed]
+16 = '#e85d04'
+17 = '#d46a5a'
+
+[colors.tab_bar]
+background = '#070a07'
+inactive_tab_edge = '#19251b'
+
+[colors.tab_bar.active_tab]
+bg_color = '#d4a017'
+fg_color = '#070a07'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#0b100c'
+fg_color = '#bbcfbe'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#0f1610'
+fg_color = '#bbcfbe'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#19251b'
+fg_color = '#bbcfbe'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#243426'
+fg_color = '#bbcfbe'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'meastblue'
+name = 'Nerv Dark - Magi Casper'
